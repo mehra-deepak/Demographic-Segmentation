@@ -17,7 +17,7 @@ import seaborn as sns
 
 dataset = pd.read_csv('Churn_Modelling.csv')
 X = dataset.iloc[:,3:13].values
-y = dataset.iloc[:,13:].values
+y = dataset.iloc[:,13].values
 
 
 # data cleaning
@@ -34,7 +34,7 @@ X[:, 2] = labelencoder_X_2.fit_transform(X[:, 2])
 onehotencoder = OneHotEncoder(categorical_features = [1])
 X = onehotencoder.fit_transform(X).toarray()
 
-# removing the dummy variable trap
+# removing the dummy variable trap by deleting one dummy var column
 
 X = X[:,1:]
 
@@ -49,3 +49,24 @@ from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 X_train =sc.fit_transform(X_train)
 X_test =sc.transform(X_test)
+
+# building the ANN 
+
+# import the necessary libraries 
+
+import keras
+
+# to initialize the ANN
+from keras.models import Sequential
+
+# to create the layers of ANN
+
+from keras.layers import Dense
+
+# initialising the ANN with successive layers
+
+classifier = Sequential()
+
+# adding the 1st input layer and the first hidden layer
+
+classifier.add(Dense(units=6, activation="relu", input_dim=11, kernel_initializer="uniform"))
