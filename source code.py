@@ -43,7 +43,7 @@ X = X[:,1:]
 from sklearn.model_selection import train_test_split
 X_train ,X_test,y_train,y_test = train_test_split(X,y,test_size=0.2,random_state =0)
 
-# feature scaling is necessary in neural neteorks
+# feature scaling is necessary in neural networks
 
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
@@ -70,3 +70,41 @@ classifier = Sequential()
 # adding the 1st input layer and the first hidden layer
 
 classifier.add(Dense(units=6, activation="relu", input_dim=11, kernel_initializer="uniform"))
+
+
+# adding the 2nd hidden layer
+
+classifier.add(Dense(units=6, activation="relu", kernel_initializer="uniform"))
+
+# adding the output layer 
+classifier.add(Dense(units=1, activation="sigmoid", kernel_initializer="uniform"))
+
+# compiling the ANN
+classifier.compile(optimizer='adam',loss ='binary_crossentropy',metrics=['accuracy'])
+
+#fitting the ANN to the training set 
+classifier.fit(X_train,y_train,batch_size =10,epochs=100)
+
+
+#predicting the test results
+y_pred= classifier.predict(X_test)
+y_pred =(y_pred>0.5)
+
+
+# making the confusion matrix
+
+from sklearn.metrics import confusion_matrix
+cm = confusion_matrix(y_test, y_pred)
+
+
+
+
+
+
+
+
+
+
+
+
+
