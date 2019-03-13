@@ -23,7 +23,7 @@ stock market prediction bankruptcy prediction ,customer clustering and market se
 
 ## About this Project 
 
-This project aims at building a Demographic Sementation model with Deep Learning Approach with the utilisation of ANN. The Dataset used for this project is a Dummy Dataset of entries of employees' in a bank and the model builds a relationship using the dependent variable to predict wheather a person stay's at the bank or leaves it.
+This project aims at building a Demographic Segmentation model with Deep Learning Approach with the utilization of ANN. The Dataset used for this project is a Dummy Dataset of entries of employees' in a bank and the model builds a relationship using the dependent variable to predict wheather a person stay's at the bank or leaves it.
 
 ## How You can Contribute to this Project 
 
