@@ -1,5 +1,6 @@
 # Demographic-Segmentation
 
+![Target-Market](https://user-images.githubusercontent.com/43044596/54298686-38887000-45df-11e9-9cf6-9a15a32f9450.jpg)
 
 Demographic segmentation is market segmentation according to age, race, religion, gender, family size, ethnicity, income, and education. Demographics can be segmented into several markets to help an organization target its consumers more accurately. With this type of segmentation, an organization can categorize the needs of consumers
 
