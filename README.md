@@ -33,3 +33,9 @@ Well there is nothing like contributing in this project , however if you really 
 Upon running the ANN with 200 epochs the accuracy obtained was 83.33456% however it kept fluctuating due to Bias-variance Tradeoff when tested with manipulated Test Set.
 
 # A note of Love
+
+Finally thanks for having me with you for quiet a lot of your precious time hope to see you next with real goods stuffs ahead , feel free to connect with me I WON'T BITE and would love collaborating with you,you can find my contact information in my Github Profile only.
+
+Also if you enjoyed this and you are not a sadist then dont forget to leave a star, you know those star and Green square really satisfy me :)
+
+Until we Meet Next HAPPY LEARNING ❤️.
